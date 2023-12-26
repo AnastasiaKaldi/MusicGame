@@ -1,12 +1,12 @@
 // import React from "react";
 // import ReactDOM from "react-dom/client";
 // import "./index.css";
-// import Navbar from "./NavBar.jsx";
-// import Games from "./Games.jsx";
+// import NavBar from "../src/NavBar.jsx";
+// import Games from "../src/Games.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(
 //   <React.StrictMode>
-//     <Navbar />
+//     <NavBar />
 //     <Games />
 //   </React.StrictMode>
 // );

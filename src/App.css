@@ -130,16 +130,18 @@ section {
 }
 
 .NavBar{
-  display: flex;
+  /* display: grid; */
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Silkscreen', sans-serif  ;
-  align-items: center;
+  /* align-items: center; */
   background-color: #0B2A0D;
   width: 100%;
   height: 5vh;
   padding: 0 5%;
   opacity: 0.9;
+  position: fixed;
+  z-index: 1;
 }
 
 
@@ -147,23 +149,30 @@ section {
   background-color: #ffffff !important; 
    position: absolute;
    top: 100px;
-   right: 20px;
+   /* right: 20px; */
    border-radius: var(--border-radius);
    padding: 10px 20px;
    width: 320px;
    height: 250px;
    opacity: 0;
-   visibility: hidden;
+   /* visibility: hidden; */
    transform: translateY(-20px);
    transition: var(--speed) ease;
+    z-index: 2;  
  }
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+  }
  .dropdown-menu.active {
    opacity: 1;
    visibility: visible;
    transform: translateY(0);
    transition: var(--speed) ease;
  }
- .dropdownmenu::before {
+ .dropdown-menu::before {
    content: "";
    position: absolute;
    top: -5px;
