@@ -1,5 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import sea from "../public/sea.mp4";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [text, setText] = useState("");
@@ -20,13 +23,34 @@ function App() {
     }, 100); // Adjust the interval speed (milliseconds per character)
   }, []);
 
+  useEffect(() => {
+    const showToast = () => {
+      const toastId = "welcome-toast";
+      toast.dark("Welcome to my Experiment!", {
+        toastId: toastId,
+        className: "toast-style",
+        bodyClassName: "toast-body",
+        progressClassName: "toast-progress",
+        theme: "dark",
+        closeOnClick: true,
+        position: "bottom-right",
+      });
+    };
+
+    showToast();
+  }, []);
+
   return (
     <section className="homepage">
+      <video autoPlay loop muted className="video-bg">
+        <source src={sea} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="App relative bg-cover bg-center h-screen">
-        <header className="App-header text-8xl flex justify-center items-center">
+        <header className="App-header text-sky-900 text-8xl flex justify-center items-center">
           Welcome to the Games
         </header>
-        <div className="hg text-5xl flex justify-center items-center mt-28">
+        <div className="hg text-5xl text-orange-700 flex justify-center items-center mt-28">
           <span className="max-w-[650px]" style={{ position: "relative  " }}>
             {text}
             {cursorPosition === text.length && (
@@ -35,43 +59,13 @@ function App() {
           </span>
         </div>
       </div>
+      {/* <div>
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div> */}
+      <ToastContainer />
     </section>
   );
 }
 
 export default App;
-
-// import "./App.css";
-// import { useEffect, useState } from "react";
-
-// function App() {
-//   const [text, setText] = useState("");
-//   const phrase = "The Games";
-
-//   useEffect(() => {
-//     let index = 0;
-
-//     const interval = setInterval(() => {
-//       setText((prevText) => prevText + phrase[index]);
-//       index++;
-
-//       if (index === phrase.length) {
-//         clearInterval(interval);
-//       }
-//     }, 100); // Adjust the interval speed (milliseconds per character)
-
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <section className="homepage">
-//       <div className="App relative bg-cover bg-center h-screen">
-//         <header className="App-header text-8xl flex justify-center items-center">
-//           The Games
-//         </header>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default App;
