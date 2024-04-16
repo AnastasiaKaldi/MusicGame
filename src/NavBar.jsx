@@ -1,5 +1,4 @@
 import { useState } from "react";
-import menu from "../public/menu.png";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,12 +8,11 @@ function NavBar() {
   };
 
   return (
-    <div className="NavBar bg-[#0B2A0D]">
+    <div className="NavBar bg-[#5f83c1]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={menu} className="h-8" alt="Flowbite Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-            MusicMario or sth lol
+            The Game Experiement
           </span>
         </a>
         <button

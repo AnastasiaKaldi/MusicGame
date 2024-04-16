@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [text, setText] = useState("");
   const [cursorPosition, setCursorPosition] = useState(0);
-  const phrase = "May the odds be ever in your favour";
+  const phrase = "May the odds be ever in your favor";
 
   useEffect(() => {
     const textInterval = setInterval(() => {
