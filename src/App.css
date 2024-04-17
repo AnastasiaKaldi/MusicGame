@@ -101,8 +101,6 @@ section {
   background-image: url('/public/TheGames.jpg');
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: white;
   background-size: cover;
   background-position: center;
@@ -123,10 +121,7 @@ section {
   pointer-events: none;
 }
 
-.VineTree{
-  height: auto;
-  width: 100%;
-}
+
 
 .NavBar{
   /* display: grid; */
@@ -193,3 +188,21 @@ section {
    .glass-container{
     background-color: rgba(49, 58, 80, 0.733);
    }
+   .A-container{
+    background-color: rgba(241, 243, 248, 0.273);
+   }
+
+   .B-container{
+    background-color: rgba(41, 43, 48, 0.468);
+
+
+   }
+
+   .A-container:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  .B-container:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  

@@ -26,14 +26,14 @@ function App() {
   useEffect(() => {
     const showToast = () => {
       const toastId = "welcome-toast";
-      toast.dark("Welcome to my Experiment!", {
+      toast.dark("🏆 Welcome to my Experiment!", {
         toastId: toastId,
         className: "toast-style",
         bodyClassName: "toast-body",
         progressClassName: "toast-progress",
         theme: "dark",
         closeOnClick: true,
-        position: "bottom-right",
+        position: "top-right",
       });
     };
 

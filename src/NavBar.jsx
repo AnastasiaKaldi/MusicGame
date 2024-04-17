@@ -1,4 +1,5 @@
 import { useState } from "react";
+import hamburgerIcon from "../public/menu.png";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,21 +23,11 @@ function NavBar() {
           aria-expanded={isOpen}
         >
           <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <img
+            src={hamburgerIcon} // Use your image source here
+            alt="Menu" // Provide an appropriate alt text for accessibility
+            className="w-10 h-6" // Set the width and height of the image
+          />
         </button>
         <div
           className={`w-full ${isOpen ? "" : "hidden"}`}
@@ -70,7 +61,6 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        {/* Rest of your content */}
       </div>
     </div>
   );
