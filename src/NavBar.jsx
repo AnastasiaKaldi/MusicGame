@@ -7,10 +7,10 @@ function NavBar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  /* flex flex-wrap items-center justify-between mx-auto p-4 */
+
   return (
     <div className="NavBar bg-[#5f83c1]">
-      <div className="max-w-screen-xl">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Project Selene
