@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "../src/App.jsx";
 import "../src/index.css";
 import NavBar from "../src/NavBar.jsx";
@@ -15,7 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/game" element={<Games />} />
         <Route path="/instructions" element={<Instructions />} />
-        {/* Other routes as needed */}
       </Routes>
     </Router>
   </React.StrictMode>
