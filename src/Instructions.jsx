@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Instructions() {
   const instructions =
-    "\n\n1. Turn left\n\n2. Jump using the space button\n\n3. The only thing you need to achieve is to collect all of the flowers\n\n4. If you get hit, you need to start from the beggining\n\n5. Have fun!";
+    "\n\n1. Turn left by using the <= button and right by using the => button\n\n2. Jump using the space button\n\n3. The only thing you need to achieve is to collect all of the flowers\n\n4. If you get hit, you need to start from the beggining\n\n5. To restart the game after you lose, press the space button\n\n6. Have Fun!";
 
   useEffect(() => {
     const showToast = () => {
