@@ -12,7 +12,7 @@ function NavBar() {
     <div className="NavBar bg-[#5f83c1]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Project Selene
           </span>
         </a>
@@ -21,14 +21,9 @@ function NavBar() {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-hamburger"
           aria-expanded={isOpen}
-          style={{ marginTop: isOpen ? "-10px" : "" }}
         >
           <span className="sr-only">Open main menu</span>
-          <img
-            src={hamburgerIcon} // Use your image source here
-            alt="Menu" // Provide an appropriate alt text for accessibility
-            className="w-10 h-6" // Set the width and height of the image
-          />
+          <img src={hamburgerIcon} alt="Menu" className="w-6 h-6" />
         </button>
         <div
           className={`w-full ${isOpen ? "" : "hidden"}`}
