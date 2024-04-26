@@ -10,7 +10,7 @@ function NavBar() {
 
   return (
     <div className="NavBar bg-[#5f83c1]">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0.25">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Project Selene
