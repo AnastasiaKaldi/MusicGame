@@ -26,9 +26,9 @@ function Instructions() {
   return (
     <section className="homepage">
       <div className="instructions relative bg-cover bg-center h-screen">
-        <div className="glass-container rounded-2xl p-10 border-white border">
-          <p className=" text-5xl flex items-center">Instructions:</p>
-          <p className=" text-3xl whitespace-pre-line flex items-center">
+        <div className="glass-container rounded-xl p-10 border-white border">
+          <p className=" text-3xl flex items-center">Instructions:</p>
+          <p className=" text-xl whitespace-pre-line flex items-center">
             {instructions}
           </p>
           <div className="text-2xl my-28 flex items-center"></div>
