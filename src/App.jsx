@@ -48,7 +48,7 @@ function App() {
       </video>
       <div className="App relative bg-cover bg-center h-screen">
         <header className="App-header text-blue-800 text-6xl flex justify-center items-center mt-20">
-          Welcome to Project Selene
+          Welcome to Project Musa
         </header>
         <div className="hg text-3xl text-sky-600 flex justify-center items-center mt-48">
           <span className="max-w-[650px]" style={{ position: "relative  " }}>
