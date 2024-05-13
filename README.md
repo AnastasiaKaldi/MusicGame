@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 
 # Installation
 Clone the repository:
+ ```bash
 git clone https://github.com/AnastasiaKaldi/MusicGame.git 
 
 Navigate to the project directory, unless you're already there:
