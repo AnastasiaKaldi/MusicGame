@@ -1,6 +1,4 @@
-# Metora Cliffs Web
-
-- THE SITE IS CURRENTLY GETTING REVAMPED
+# Project Musa
 
 ProjectMusa is the Website created to host two run-jump-run games for a university experiment. The website was developed with a beach theme to match the games' theme, with small touches of videogame aesthetics. It is built using modern web technologies such as React, and Tailwind CSS, and incorporates a variety of cutting-edge features like React Toastify for an engaging user experience. 
 
