@@ -59,10 +59,6 @@ function App() {
           </span>
         </div>
       </div>
-      {/* <div>
-        <button onClick={notify}>Notify!</button>
-        <ToastContainer />
-      </div> */}
       <ToastContainer />
     </section>
   );
