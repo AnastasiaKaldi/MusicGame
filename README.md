@@ -14,13 +14,15 @@ Clone the repository:
 git clone https://github.com/AnastasiaKaldi/MusicGame.git 
 
 Navigate to the project directory, unless you're already there:
-
+```bash
 cd MusicGame
 
 Install the project dependencies:
+```bash
 npm install
 
 # Running the Development Server
 To start the development server, run the following command:
-
+```bash
 npm run dev
+```
